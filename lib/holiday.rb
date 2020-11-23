@@ -83,7 +83,7 @@ end
 
 def format_holiday(holiday)
   #convert holiday into titlecase
-    holiday.to_s.split(" ").each {|word| word.capitalize!}.join(" ")
+    binding.pry
 
   end
 
