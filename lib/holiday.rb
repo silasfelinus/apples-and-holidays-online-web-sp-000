@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.capitalize + ":"
     holidays.each do |holiday, supplies|
       message = "  "
-      message << format_holiday(holiday)
+      message << holiday.to_s.gsub("_", " ").split.map { |x| x.capitalize }.join(" ")
       message << ": "
       supplies.each_with_index do |supply, index|
         message << supply
@@ -81,10 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
-def format_holiday(holiday)
-  #convert holiday into titlecase
-    holiday.to_s.gsub("_", " ").split.map { |x| x.capitalize }.join(" ")
-end
+
 
 
 def all_holidays_with_bbq(holiday_hash)
