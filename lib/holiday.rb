@@ -83,10 +83,8 @@ end
 
 def format_holiday(holiday)
   #convert holiday into titlecase
-  working_name = holiday.to_s.capitalize
-
-
-  end
+    working_name = holiday.to_s.capitalize
+end
 
 
 def all_holidays_with_bbq(holiday_hash)
