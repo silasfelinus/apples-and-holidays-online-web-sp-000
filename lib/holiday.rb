@@ -83,7 +83,8 @@ end
 
 def format_holiday(holiday)
   #convert holiday into titlecase
-    binding.pry
+  puts holiday.to_s
+
 
   end
 
