@@ -83,8 +83,7 @@ end
 
 def format_holiday(holiday)
   #convert holiday into titlecase
-    #holiday_array = holiday.to_s.split.map(&:capitalize).join(' ')
-    "here"
+    holiday.to_s.split.map(&:capitalize).join(' ')
   end
 
 
