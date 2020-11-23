@@ -83,7 +83,8 @@ end
 
 def format_holiday(holiday)
   #convert holiday into titlecase
-    holiday.to_s.split.map { |x| x.capitalize }.join(" ")
+    converted_holiday = holiday.to_s.split.map { |x| x.capitalize }.join(" ")
+    converted_holiday.to_s
   end
 
 
