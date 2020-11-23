@@ -86,7 +86,7 @@ def format_holiday(holiday)
     holiday_array = holiday.to_s.split.map(&:capitalize).join(' ')
   end
 
-  
+
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
